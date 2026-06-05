@@ -1,4 +1,4 @@
-#Active Directory User and Group Management Lab
+# Active Directory User and Group Management Lab
 Overview
 
 This lab demonstrates the installation and configuration of Active Directory Domain Services (AD DS) in Windows Server 2022. The project includes creating a new domain, managing user accounts, creating security groups, and verifying group memberships within an Active Directory environment.
