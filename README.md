@@ -1,63 +1,142 @@
 # Active Directory User and Group Management Lab
-Overview
 
-This lab demonstrates the installation and configuration of Active Directory Domain Services (AD DS) in Windows Server 2022. The project includes creating a new domain, managing user accounts, creating security groups, and verifying group memberships within an Active Directory environment.
+## Project Overview
 
-Objectives
-Install Windows Server 2022 in a virtual machine.
-Install Active Directory Domain Services (AD DS).
-Create a new Active Directory forest and domain.
-Create user accounts within Active Directory.
-Create security groups.
-Add users to security groups.
-Verify group memberships.
-Technologies Used
-Windows Server 2022
-Active Directory Domain Services (AD DS)
-VirtualBox
-Windows Administration Tools
-Lab Steps
-1. Install Windows Server 2022
+This lab demonstrates the deployment and administration of Active Directory Domain Services (AD DS) using Windows Server 2022 in a VirtualBox environment.
 
-Installed Windows Server 2022 Desktop Experience in a VirtualBox virtual machine.
+The objective was to install Active Directory, create a new domain, configure user accounts and security groups, and verify group membership assignments using Active Directory Users and Computers (ADUC).
 
-2. Configure Active Directory Domain Services
+---
 
-Installed the AD DS role and required management tools through Server Manager.
+## Technologies Used
 
-3. Create a New Domain
+* Windows Server 2022
+* Active Directory Domain Services (AD DS)
+* Active Directory Users and Computers (ADUC)
+* VirtualBox
+* Windows Administration Tools
 
-Configured a new forest with the domain:
+---
 
-lab.local
+## Lab Objectives
 
-4. Create User Accounts
+* Install Windows Server 2022
+* Deploy Active Directory Domain Services
+* Create a new forest and domain
+* Configure user accounts
+* Create security groups
+* Assign users to groups
+* Verify Active Directory functionality
 
-Created the following Active Directory user accounts:
+---
 
-IT Admin
-Help Desk
-Test User
-5. Create Security Groups
+## Installation Process
 
-Created security groups to organize and manage user permissions.
+### 1. Windows Server Installation
 
-6. Assign Group Memberships
+Selected Windows Server 2022 Standard Evaluation (Desktop Experience).
 
-Added users to the appropriate security groups and verified successful membership assignments.
+![Windows Server Installation](Screenshots/01-Installation-Type.png)
 
-Skills Demonstrated
-Active Directory Administration
-Windows Server Installation
-User Account Management
-Group Management
-Domain Services Configuration
-Identity and Access Management
-Help Desk Administration Fundamentals
-Screenshots
+![Windows Server Edition Selection](Screenshots/02-Windows-Server-Edition-Selection.png)
 
-Screenshots documenting each stage of the lab can be found in the Screenshots folder.
+![Disk Selection](Screenshots/03-Disk-Selection.png)
 
-Outcome
+---
 
-Successfully deployed Active Directory Domain Services, created a domain environment, managed users and groups, and verified group memberships within Windows Server 2022.
+### 2. Active Directory Domain Services Installation
+
+Installed the AD DS role and required management tools.
+
+![AD DS Required Features](Screenshots/04-ADDS-Required-Features.png)
+
+![AD DS Installation Progress](Screenshots/05-ADDS-Installation-Progress.png)
+
+---
+
+### 3. Domain Configuration
+
+Created a new Active Directory forest and configured the root domain.
+
+**Domain Name:** `lab.local`
+
+![Domain Deployment Configuration](Screenshots/06-Domain-Deployment-Configuration.png)
+
+---
+
+## User Management
+
+Created several user accounts to simulate a small business environment.
+
+### IT Administrator Account
+
+* Username: ITAdmin
+
+![Create IT Admin User](Screenshots/07-Create-ITAdmin-User.png)
+
+### Help Desk Account
+
+* Username: HelpDesk
+
+![Create Help Desk User](Screenshots/08-Create-HelpDesk-User.png)
+
+### Standard Test User
+
+* Username: TestUser
+
+![Create Test User](Screenshots/09-Create-TestUser.png)
+
+---
+
+## Active Directory Administration
+
+Verified all created users and groups within Active Directory Users and Computers.
+
+![ADUC Overview](Screenshots/10-ADUC-Overview.png)
+
+---
+
+## Group Management
+
+### ITAdmins Security Group
+
+Added ITAdmin user to the ITAdmins group.
+
+![ITAdmins Group Membership](Screenshots/11-ITAdmins-Group-Membership.png)
+
+### HelpDesk Security Group
+
+Added HelpDesk user to the HelpDesk security group.
+
+![HelpDesk Group Membership](Screenshots/12-HelpDesk-Group-Membership.png)
+
+---
+
+## Skills Demonstrated
+
+* Active Directory Administration
+* Domain Controller Deployment
+* User Account Management
+* Security Group Administration
+* Identity and Access Management (IAM)
+* Windows Server Management
+* Microsoft Enterprise Environment Fundamentals
+* Documentation and Technical Reporting
+
+---
+
+## Results
+
+Successfully deployed a Windows Server 2022 Active Directory environment, created user accounts, configured security groups, and verified group memberships using Active Directory administrative tools.
+
+This project demonstrates foundational system administration skills commonly used in Help Desk, Desktop Support, and Junior Systems Administrator roles.
+
+---
+
+## Author
+
+**Dante Walker**
+
+Aspiring IT Support / Help Desk Professional
+
+GitHub Portfolio Project
